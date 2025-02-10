@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "botmanager"
+version = "0.1.0"
+description = "A project to orchestrate, run, and analyze Python-based bots, SaaS, MicroSaaS, and other applications."
+authors = [{ name = "Guilherme Antônio Trentin", email = "trentinguilhermesoftware@gmail.com" }]
+license = { file = "LICENSE" }
+dependencies = [
+    "click",
+    "rich",
+    "setuptools",
+    "wheel"
+]
+
+[project.scripts]
+botmanager.create-project = "botmanager.cli:create_project"
+how_to_use = "pip install git+https://github.com/TrentinSoftware/BotManager.git"
